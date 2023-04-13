@@ -3,13 +3,13 @@ import { useParams } from "react-router-dom";
 import Button from "../../shared/components/FormElements/Button";
 
 import Input from "../../shared/components/FormElements/Input";
-import { useForm } from "../../shared/components/hooks/form-hook";
+import { useForm } from "../../shared/hooks/form-hook";
 import Card from "../../shared/components/UIElements/Card";
 
 import {
   VALIDATOR_MINLENGTH,
   VALIDATOR_REQUIRE,
-} from "../../shared/components/util/validators";
+} from "../../shared/util/validators";
 
 import "./Place.css";
 
