@@ -5,8 +5,9 @@ const placesRouter = require('./routes/places-routes')
 
 const app = express()
 
-app.use('/api/places', placesRouter)
+app.use(bodyParser.json())
 
+app.use('/api/places', placesRouter)
 
 // We will add that middleware at the end of our routes
 // Since it takes 4 params, the express will recognize this and use it as error handling middleware
