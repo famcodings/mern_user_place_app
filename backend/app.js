@@ -2,6 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 
 const placesRouter = require('./routes/places-routes')
+const usersRouter = require('./routes/users-routes')
 
 const HttpError = require('./models/http-error')
 
@@ -10,6 +11,7 @@ const app = express()
 app.use(bodyParser.json())
 
 app.use('/api/places', placesRouter)
+app.use('/api/users', usersRouter)
 
 // This middleware is responsible to handle undefined routes (it should be at the end of all routes)
 // Req will reach to this middle only if we have not defined a route to handle that request
